@@ -1,0 +1,25 @@
+
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+  
+    <th scope="col">Employee Id</th>
+    <th scope="col">First Name</th>
+    <th scope="col">Last Name</th>
+    <th scope="col">Allocated Seat</th>
+    <th scope="col">Email </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let employee of employeesList; index as i">
+    <!-- <th scope="row">{{ i + 1 }}</th> -->
+   
+    <td>{{ employee.employeeId }}</td>
+    <td>{{ employee.firstName }}</td>
+    <td>{{ employee.lastName  }}</td>
+    <td>{{ employee.allocatedSeat }}</td>
+    <td>{{ employee.email }}</td>
+  </tr>
+  </tbody>
+</table>
